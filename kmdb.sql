@@ -82,12 +82,24 @@ CREATE TABLE top_cast (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title TEXT,
   actor TEXT,
-  role TEXT,
+  role TEXT
 );
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO!
+INSERT INTO movies (
+  title,
+  release_year,
+  mpaa_rating,
+  director
+)
+
+VALUES (
+  "Batman Begins",
+  "2005",
+  "PG-13",
+  "Christopher Nolan"
+);
 
 -- Prints a header for the movies output
 .print "Movies"
